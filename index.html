@@ -112,7 +112,7 @@
         <p>Prendete in considerazione situazioni in cui i vostri bisogni divergono da quelli di un'altra persona. Come rispondete solitamente a tali situazioni?</p>
         <p> </p>
         <p>Nelle pagine seguenti troverete 30 coppie di affermazioni che descrivono possibili risposte comportamentali. Per ogni coppia, scegliete l'affermazione (A o B) che meglio descrive il vostro comportamento tipico.</p>
-        <button class="btn-start" onclick="startQuiz()">Inizia il Test</button>
+        <button class="btn-start" onclick="startQuiz()">Inizia il test</button>
     </div>
 
     <div id="quiz-screen" class="hidden">
@@ -127,10 +127,10 @@
     </div>
 
     <div id="result-screen" class="hidden">
-        <h1>I Tuoi Risultati</h1>
+        <h1>I tuoi risultati</h1>
         <canvas id="resultsChart"></canvas>
         <div id="interpretation" class="results-info"></div>
-        <button class="btn-start" style="margin-top: 20px;" onclick="location.reload()">Rifai il Test</button>
+        <button class="btn-start" style="margin-top: 20px;" onclick="location.reload()">Rifai il test</button>
     </div>
 </div>
 
@@ -245,11 +245,12 @@
         ];
         
         const prevalente = styles.reduce((prev, current) => (prev.val > current.val) ? prev : current);
-        document.getElementById('interpretation').innerHTML = `<strong>Stile Prevalente: ${prevalente.name}</strong><br>${prevalente.desc}`;
+        document.getElementById('interpretation').innerHTML = `<strong>Stile prevalente: ${prevalente.name}</strong><br>${prevalente.desc}`;
     }
 </script>
 
 </body>
 
 </html>
+
 
